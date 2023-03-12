@@ -86,7 +86,10 @@ input:checked + label + .acordion_panel_photo {
     transform: scale(1.2)
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+    body{
+        max-width: 20em;
+    }
     .accardion{
        max-width: 30em;
     }
@@ -98,4 +101,12 @@ input:checked + label + .acordion_panel_photo {
     label{
    font-size: 1em;
   }
+  .accardion {
+    max-width: 20em;
+  }
+}
+@media screen and (max-width: 500px) {
+    body{
+        max-width: 16em;
+    }
 }
