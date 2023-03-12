@@ -1,0 +1,87 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background: #F2F6F7;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 44em;
+}
+.header h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+label{
+    font-size: 25px;
+}
+ img{
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+input:checked + label + .acordion_panel_photo{
+    height: auto;
+    padding: 25px 0px;
+}
+
+label{
+    border-top: 1px solid #00486D;
+    height: 100%;
+    display: block;
+}
+.accardion{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 44em;
+}
+.acordion_panel_photo{
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+.accardion_panel{
+    max-width: 1000px;
+    overflow: hidden;
+}
+.accardion:hover .click::after {
+    content: "\276F";
+    float: right;
+}
+.accardion input:checked +.click::after {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+.accardion_panel input:checked + .click::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 30px;
+  }
+input + label + .acordion_panel_photo {
+    height:0;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+input:checked + label + .acordion_panel_photo {
+    height: 100%;
+    opacity: 100%;
+    transition: all 3s;
+}
+.accardion input:checked + .accardion_panel + .accardion_panel input:checked ~ .acordion_panel_photo {
+    height: 0px;
+    opacity: 0;
+    transition: all
+}
+.acordion_panel_photo:hover{
+    transform: scale(1.2)
+}
