@@ -86,7 +86,7 @@ input:checked + label + .acordion_panel_photo {
     transform: scale(1.2)
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .accardion{
        max-width: 30em;
     }
