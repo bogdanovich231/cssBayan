@@ -85,3 +85,16 @@ input:checked + label + .acordion_panel_photo {
 .acordion_panel_photo:hover{
     transform: scale(1.2)
 }
+
+@media screen and (max-width: 500px) {
+    .accardion{
+       max-width: 30em;
+    }
+    .acordion_panel_photo img{
+        max-width: 90%;
+    }
+  }
+@media screen and (max-width: 400px) {
+    label{
+   font-size: 1em;
+  }
